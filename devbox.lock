@@ -1,0 +1,150 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2026-01-26T13:12:53Z",
+      "resolved": "github:NixOS/nixpkgs/13b0f9e6ac78abbbb736c635d87845c4f4bee51b?lastModified=1769433173"
+    },
+    "libiconv@latest": {
+      "last_modified": "2026-01-23T17:20:52Z",
+      "resolved": "github:NixOS/nixpkgs/a1bab9e494f5f4939442a57a58d0449a109593fe#libiconv",
+      "source": "devbox-search",
+      "version": "2.42",
+      "systems": {
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/h1vrr0qigczj4rkksnqagzmd6xir5609-glibc-iconv-2.42",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/h1vrr0qigczj4rkksnqagzmd6xir5609-glibc-iconv-2.42"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/r6mywbqf8x8jl2kp94bk6g8d5kpcj79x-glibc-iconv-2.42",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/r6mywbqf8x8jl2kp94bk6g8d5kpcj79x-glibc-iconv-2.42"
+        }
+      }
+    },
+    "openblas@latest": {
+      "last_modified": "2026-01-23T17:20:52Z",
+      "resolved": "github:NixOS/nixpkgs/a1bab9e494f5f4939442a57a58d0449a109593fe#openblas",
+      "source": "devbox-search",
+      "version": "0.3.30",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ssl6kfm7w37gz5pn57jn2x7xzw3bss24-openblas-0.3.30",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/ykca09z4vmzwiygiknim44kkzp934wk1-openblas-0.3.30-dev"
+            }
+          ],
+          "store_path": "/nix/store/ssl6kfm7w37gz5pn57jn2x7xzw3bss24-openblas-0.3.30"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mx3mlwlqcxnw5adgmadcb3ll58xlqfcx-openblas-0.3.30",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/5k19m5r4ad7bknl2li0nfv3f7aq3mf30-openblas-0.3.30-dev"
+            }
+          ],
+          "store_path": "/nix/store/mx3mlwlqcxnw5adgmadcb3ll58xlqfcx-openblas-0.3.30"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wgbw7yzdpaqvf2fpx5n9wnq3a503nrpp-openblas-0.3.30",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/0pr0lxalbndvlmxmjbb1qkm1af3nwr6q-openblas-0.3.30-dev"
+            }
+          ],
+          "store_path": "/nix/store/wgbw7yzdpaqvf2fpx5n9wnq3a503nrpp-openblas-0.3.30"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fdz7a7ggv0nn8d11gh8lyvmyp8r3kjqz-openblas-0.3.30",
+              "default": true
+            },
+            {
+              "name": "dev",
+              "path": "/nix/store/sj31xzydp04l73frhzyfh2m6xkaxid96-openblas-0.3.30-dev"
+            }
+          ],
+          "store_path": "/nix/store/fdz7a7ggv0nn8d11gh8lyvmyp8r3kjqz-openblas-0.3.30"
+        }
+      }
+    },
+    "rustup@latest": {
+      "last_modified": "2026-01-23T17:20:52Z",
+      "plugin_version": "0.0.1",
+      "resolved": "github:NixOS/nixpkgs/a1bab9e494f5f4939442a57a58d0449a109593fe#rustup",
+      "source": "devbox-search",
+      "version": "1.28.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/r0nacc31pp9jglw15wacjp8bzyjhi41b-rustup-1.28.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/r0nacc31pp9jglw15wacjp8bzyjhi41b-rustup-1.28.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jczizx7qz254wi11kj9flx1kyzvpxb3x-rustup-1.28.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jczizx7qz254wi11kj9flx1kyzvpxb3x-rustup-1.28.2"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/prxdrp8ffnsrmzfznjgiqvqm8j810c5v-rustup-1.28.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/prxdrp8ffnsrmzfznjgiqvqm8j810c5v-rustup-1.28.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8kys5yhdhiybfw4p4rdyfg7av8rldl6r-rustup-1.28.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8kys5yhdhiybfw4p4rdyfg7av8rldl6r-rustup-1.28.2"
+        }
+      }
+    }
+  }
+}

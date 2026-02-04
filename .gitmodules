@@ -1,0 +1,3 @@
+[submodule "job-parquet"]
+	path = job-parquet
+	url = https://github.com/bytezzz/join-order-benchmark-parquet.git

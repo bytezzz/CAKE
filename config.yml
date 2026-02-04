@@ -1,0 +1,61 @@
+job_path: "/Users/bytez/arrow-quiver/join-order-benchmark"
+runtime_dir: "./smartware_runtime"
+parquet_cache_memory_budget_gb: 25
+# Policy options: heuristic, single_policy, non_contextual_ucb, oracle_machine, cake, cake_bs
+policy: cake
+
+# Single policy configuration
+# For sort: 0=quicksort, 1=heapsort, 2=insertion_sort
+# For filter: 0=slice_iter, 1=index_iter
+# For query_plan: 0=parallel, 1=sequential
+single_policy_config:
+  sort_policy: 0
+  filter_policy: 0
+  query_plan_policy: 1
+
+chunk_sizes:
+  query_plan: 65535
+  filter: 65535
+  sort: 4096
+
+string_contains_feature_sample_ratio: 0.2
+sort_feature_sample_ratio: 0.01
+
+filter:
+  num_features: 1
+  num_policies: 2
+  metric_type: "time" # Options: time, cycles, instructions, cache_misses
+  ucb:
+    alpha: 1
+  cake:
+    alpha: 0.5
+    max_depth: 3
+    bandwidth: 0.1
+    n_min: 3
+    regret_tree_after_decisions: 32767
+
+query_plan:
+  num_features: 2
+  num_policies: 2
+  metric_type: "time" # Options: time, cycles, instructions, cache_misses
+  ucb:
+    alpha: 1
+  cake:
+    alpha: 0.5
+    max_depth: 4
+    bandwidth: 0.056
+    n_min: 3
+    regret_tree_after_decisions: 32767
+
+sort:
+  num_features: 2
+  num_policies: 2
+  metric_type: "time" # Options: time, cycles, instructions, cache_misses
+  ucb:
+    alpha: 1
+  cake:
+    alpha: 0.492
+    max_depth: 3
+    bandwidth: 0.996
+    n_min: 3
+    regret_tree_after_decisions: 32767
